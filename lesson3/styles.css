@@ -47,6 +47,7 @@ thead td {
 }
 
 tbody td:first-child {
+    text-align: left;
     color: orange;
 }
 
@@ -57,8 +58,4 @@ tbody td:not(:first-child) {
 
 td {
     text-align: center
-}
-
-tbody td:first-child {
-    text-align: left
 }
