@@ -12,4 +12,12 @@ a[href^="//"][href*="google.com"] {
 
 a[target="_blank"]:after {
     content: " ⇱";
+    display: inline-block;
+    margin: 0 6px;
+    transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    text-decoration: none;
 }
