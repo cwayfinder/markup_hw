@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form action="#">
+    <label>
+        Name<br/>
+        <input type="text" name="name">
+    </label><br/><br/>
+
+    <label>
+        Email<br>
+        <input type="email" name="email">
+    </label><br/><br/>
+
+    Sex<br>
+    <label><input type="radio" name="sex"/>Male</label>
+    <label><input type="radio" name="sex"/>Female</label><br/><br/>
+
+    Current status<br/>
+    <label><input type="checkbox" name="student"/>Student</label><br/>
+    <label><input type="checkbox" name="employed"/>Employed</label><br/>
+    <label><input type="checkbox" name="unemployed"/>Unemployed</label><br/><br/>
+
+    Month and Year of birth<br/>
+    <select name="month">
+        <option value="j" selected>January</option>
+    </select>
+    <select name="year">
+        <option value="1984" selected>1984</option>
+    </select><br/><br/>
+
+    Skills and Technologies<br/>
+    <select name="skills" multiple size="10">
+        <optgroup label="Tech skills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="git">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="tm">Time management</option>
+            <option value="p">Proactivity</option>
+            <option value="t">Teamwork</option>
+            <option value="l">Leadership</option>
+        </optgroup>
+    </select><br/><br/>
+
+    Photo<br/>
+    <input name="photo" type="file" accept="image/jpeg"/><br/><br/>
+
+    Comments<br/>
+    <textarea name="comments" rows="5"></textarea>
+</form>
+
+</body>
+</html>
