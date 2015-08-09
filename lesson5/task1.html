@@ -10,30 +10,33 @@
             margin: 0;
         }
 
-        nav {
+        .menu {
             font-family: Oswald, Impact, sans-serif;
-        }
-
-        .main-menu-wrapper {
+            height: 40px;
+            width: 100%;
             background-color: #1aa4ff;
             box-shadow: 0 0 4px rgba(0, 0, 0, .2);
-            color: white;
-            text-transform: uppercase;
-            float: left;
         }
 
-        .secondary-menu {
+        .main-menu {
+            color: white;
+            text-transform: uppercase;
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .secondary-menu-wrapper {
             background-color: #eeeeee;
             color: #a0a0a0;
             text-transform: none;
-            font-size: small;
+            font-size: smaller;
             float: left;
             position: absolute;
             left: 0;
-            margin-top: 8px;
+            top: 40px;
+            width: 100%;
             max-height: 0;
             overflow: hidden;
-            transition: max-height .3s ease;
             -webkit-transition: max-height .3s ease;
         }
 
@@ -55,10 +58,9 @@
             text-shadow: 0 2px 0 rgba(255, 255, 255, .5);
         }
 
-        li:hover .secondary-menu {
+        li:hover .secondary-menu-wrapper {
             display: block;
             max-height: 1000px;
-            transition: max-height .3s ease;
             -webkit-transition: max-height .3s ease;
         }
     </style>
@@ -66,15 +68,15 @@
 <body>
 
 <nav class="menu">
-    <div class="main-menu-wrapper">
-        <menu class="main-menu">
-            <li>Home</li>
-            <li>News</li>
-            <li>Economics</li>
-            <li>Local</li>
-            <li>Sport</li>
-            <li>Culture</li>
-            <li>Travels
+    <menu class="main-menu">
+        <li>Home</li>
+        <li>News</li>
+        <li>Economics</li>
+        <li>Local</li>
+        <li>Sport</li>
+        <li>Culture</li>
+        <li>Travels
+            <nav class="secondary-menu-wrapper">
                 <menu class="secondary-menu">
                     <li>Amsterdam</li>
                     <li>Bahamas</li>
@@ -87,13 +89,13 @@
                     <li>Paris</li>
                     <li>Rome</li>
                 </menu>
-            </li>
-            <li>Living</li>
-            <li>Money</li>
-            <li>Technology</li>
-            <li>More</li>
-        </menu>
-    </div>
+            </nav>
+        </li>
+        <li>Living</li>
+        <li>Money</li>
+        <li>Technology</li>
+        <li>More</li>
+    </menu>
 </nav>
 
 </body>
