@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+        body:after {
+            background-image: url('task2.png');
+            background-repeat: no-repeat;
+            content: "";
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .container {
+            background-color: #ee8129;
+            font-family: Roboto, Impact, sans-serif;
+            color: white;
+            padding: 4px;
+            border-radius: 4px;
+            text-align: center;
+            width: 286px;
+            margin-top: 41px;
+            margin-left: 455px;
+        }
+
+        .content {
+            background-color: white;
+            color: #35495a;
+            padding: 16px;
+        }
+
+        .container h1 {
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-size: 24px;
+            padding: 22px;
+        }
+
+        .content h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price sup {
+            margin: 4px 5px 0 0;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 22px;
+        }
+
+        .price strong {
+            font-size: 70px;
+        }
+
+        .price sub {
+            font-size: 17px;
+        }
+
+        ul {
+            text-align: left;
+            padding: 0;
+            color: #888c94;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 1px;
+            padding: 7px 0 7px 56px;
+        }
+
+        li:nth-child(odd) {
+            background-color: #edf5fd;
+        }
+
+        li:nth-child(even) {
+            background-color: #f5f5f6;
+        }
+
+        a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #ee8129;
+            color: white;
+            padding: 10px;
+            margin: 20px 0 18px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Best value</h1>
+
+    <div class="content">
+        <h2>Iconic graphics</h2>
+
+        <p class="price"><sup>$</sup><strong>25</strong><sub>Monthly</sub></p>
+        <ul>
+            <li>PHP, PERL, ASP, JSP</li>
+            <li>SEMI DEDICATED</li>
+            <li>Staging or Production</li>
+            <li>Unlimited e-Mails</li>
+        </ul>
+            <a href="#">Enroll today</a>
+    </div>
+</div>
+
+</body>
+</html>
