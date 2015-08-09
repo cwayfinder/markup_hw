@@ -1,0 +1,11 @@
+a[href^="http://"], a[href^="https://"] {
+    color: #f70;
+}
+
+a[href^="http://"][href*="google.com"], a[href^="https://"][href*="google.com"] {
+    color: #666;
+}
+
+a[target="_blank"]:after {
+    content: " ⇱";
+}
