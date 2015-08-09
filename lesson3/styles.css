@@ -13,11 +13,11 @@ p:first-letter {
     color: red;
 }
 
-#allotment > h2 {
+#allotment h2 {
     color: orange;
 }
 
-#warehouse > h2 {
+#warehouse h2 {
     color: blue;
 }
 
