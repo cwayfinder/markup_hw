@@ -1,8 +1,12 @@
-a[href^="http://"], a[href^="https://"] {
+a[href^="http://"],
+a[href^="https://"],
+a[href^="//"] {
     color: #f70;
 }
 
-a[href^="http://"][href*="google.com"], a[href^="https://"][href*="google.com"] {
+a[href^="http://"][href*="google.com"],
+a[href^="https://"][href*="google.com"],
+a[href^="//"][href*="google.com"] {
     color: #666;
 }
 
