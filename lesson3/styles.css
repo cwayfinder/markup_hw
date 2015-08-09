@@ -54,3 +54,11 @@ tbody td:not(:first-child) {
     background-color: green;
     color: white;
 }
+
+td {
+    text-align: center
+}
+
+tbody td:first-child {
+    text-align: left
+}
