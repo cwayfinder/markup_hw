@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Oswald);
+
+        body {
+            margin: 0;
+        }
+
+        nav {
+            font-family: Oswald, Impact, sans-serif;
+            background-color: #a64dff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+        }
+
+        menu {
+            width: 900px;
+            margin: 0 auto;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 8px 20px;
+        }
+
+        li:hover:not(.active) {
+            background-color: #7300E6;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #eeeeee;
+            color: #a0a0a0;
+            text-shadow: 0 2px 0 rgba(255, 255, 255, .5);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <menu>
+        <li>Home</li>
+        <li>News</li>
+        <li>Economics</li>
+        <li>Local</li>
+        <li>Sport</li>
+        <li>Culture</li>
+        <li class="active">Travels</li>
+    </menu>
+</nav>
+
+</body>
+</html>
