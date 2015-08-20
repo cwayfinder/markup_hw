@@ -73,7 +73,9 @@
         }
 
         li {
-            list-style-type: none;
+            /*list-style-type: none;*/
+            list-style-position: inside;
+            list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAABxklEQVQoU2NkIBGYtJtUi4mIaW97ui2GoYHhHyMp+g07DWuDbIOqmBmY2fdf2r9694vdkUQboN+pX+tl6VXFwsTC8f//fwaGvwz/txzfkgM3QLBEUOfvr78/P036dBvdVbqturVO5k5VrCysYM3//v9jeHro6aJVDaviwQaANPtZ+q1n+M/wb/2h9T7Ihmi3atfaGttWMbMwc4A0ggx4dvzZ8k31m6IZGBj+M4I0e1p6rhfkF1QBSb589/LW7qO7wYZotGjUWehbVDKyMEJsZvjH8O7suzVbareEgTSDLGeUqZAJtreyn8XGyib0H+SE//8Y3r1/d/POozs79bT00piYmDh+//vN8PnXZ4avF76uP9p6NISBgeEfzJtgL8jVyoWZ6JlMY2FnEQYZAIb//zG8+faG4cW3Fwwffnxg+HXu16pP8z5FMYCCDwnAA1G6SjpMR1dnGiMro/CTz08YHnx6wPDjzw+w0r9X/q7/P/8/yNl/0AMYJRqlq6VDP/F8mvSZ4bMEXOENhi0MCxmCGBgYfmNLM5jpIJvBn0GQYToDC4Mkw22GHQxLGQIYGBh+4kpw2BNSJoMfAxtDAsNEBpCfIf7AAQCGRr3g/jePcQAAAABJRU5ErkJggg==);
             margin: 1px;
             padding: 7px 0 7px 56px;
         }
@@ -97,6 +99,12 @@
             font-size: 14px;
             font-weight: bold;
             border-radius: 5px;
+            box-shadow: 0 3px 0 0 #924800;
+        }
+
+        a:active {
+            box-shadow: none;
+            transform: translateY(3px);
         }
     </style>
 </head>
