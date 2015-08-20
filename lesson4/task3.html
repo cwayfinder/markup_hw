@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+        .pager {
+            color: #333;
+            font-family: Roboto, serif;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .pager__list {
+            font-size: small;
+            padding: 6px 0;
+            list-style-type: none;
+        }
+
+        .pager__item {
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+        }
+
+        .pager__item--empty {
+            width: 20px;
+        }
+
+        .pager__link {
+            color: #a64dff;
+            text-decoration: none;
+            display: block;
+            padding: 4px;
+            min-width: 16px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+
+        .pager__link:not(.pager__link--active):hover {
+            background-color: #eee;
+        }
+
+        .pager__link--page {
+            border-color: #dddddd;
+            border-radius: 3px;
+        }
+
+        .pager__link--first:before,
+        .pager__link--prev:before {
+            content: "≪ ";
+        }
+
+        .pager__link--next:after,
+        .pager__link--last:after {
+            content: " ≫";
+        }
+
+        .pager__link--smart {
+            text-transform: uppercase;
+        }
+
+        .pager__link--active {
+            background-color: #a64dff;
+            color: #fafafa;
+            border-color: #7c12bc;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="pager">
+    <ul class="pager__list">
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--smart pager__link--first">first</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--smart pager__link--prev">prev</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">1</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">2</a>
+        </li>
+        <li class="pager__item pager__item--empty">...</li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">5</a></li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">6</a></li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">7</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page pager__link--active">8</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--page">9</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--smart pager__link--last">next</a>
+        </li>
+        <li class="pager__item">
+            <a href="#" class="pager__link pager__link--smart pager__link--next">last</a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>
