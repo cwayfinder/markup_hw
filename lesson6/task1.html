@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font-family: Trebuchet MS, sans-serif;
+        }
+
+        .header {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #41525c;
+        }
+
+        .plans {
+            display: flex;
+        }
+
+        .plan {
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            width: 288px;
+        }
+
+        .plan.standard, .plan.ultimate {
+            margin: 15px 0 16px 0;
+            border: solid 1px #e8eaec;
+        }
+
+        .plan.standard {
+            background-color: #37c2d3;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .plan.ultimate {
+            background-color: #1cb79a;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .plan.best-value {
+            background-color: #ee8129;
+            padding: 4px;
+            box-shadow: 0 0 8px #0874b2;
+            z-index: 1;
+        }
+
+        .content {
+            background-color: white;
+            color: #35495a;
+            padding: 16px;
+        }
+
+        .standard .content, .ultimate .content {
+
+        }
+
+        .plan h1 {
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-size: 24px;
+
+        }
+
+        .plan.standard h1, .plan.ultimate h1 {
+            padding: 16px;
+        }
+
+        .plan.best-value h1 {
+            padding: 22px;
+        }
+
+        .content h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price sup {
+            margin: 4px 5px 0 0;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 22px;
+        }
+
+        .price strong {
+            font-size: 70px;
+        }
+
+        .price sub {
+            font-size: 17px;
+        }
+
+        ul {
+            text-align: left;
+            padding: 0;
+            color: #888c94;
+        }
+
+        li {
+            list-style: none;
+            background: url("marker.png") no-repeat 30px;
+            margin: 1px;
+            padding: 7px 0 7px 60px;
+            font-size: 15px;
+        }
+
+        li:nth-child(odd) {
+            background-color: #edf5fd;
+        }
+
+        li:nth-child(even) {
+            background-color: #f5f5f6;
+        }
+
+        .plan a {
+            display: block;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .plan.standard a, .plan.ultimate a {
+            margin: 20px 0 5px;
+            background-color: #3371a6;
+            box-shadow: 0 3px 0 0 #16436a;
+        }
+
+        .plan.best-value a {
+            margin: 20px 0 18px;
+            background-color: #ee8129;
+            box-shadow: 0 3px 0 0 #924800;
+        }
+
+        a:active {
+            box-shadow: none;
+            transform: translateY(3px);
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1 class="header">We have a very flexible offers for you to chose</h1>
+
+    <div class="plans">
+        <div class="plan standard">
+            <h1>Standard</h1>
+
+            <div class="content">
+                <h2>Iconic graphics</h2>
+
+                <p class="price"><sup>$</sup><strong>10</strong><sub>Monthly</sub></p>
+                <ul>
+                    <li>Unmetered Traffic</li>
+                    <li>Unlimited Domain</li>
+                    <li>Unlimited Databases</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <a href="#">Enroll today</a>
+            </div>
+        </div>
+
+        <div class="plan best-value">
+            <h1>Best value</h1>
+
+            <div class="content">
+                <h2>Iconic graphics</h2>
+
+                <p class="price"><sup>$</sup><strong>25</strong><sub>Monthly</sub></p>
+                <ul>
+                    <li>PHP, PERL, ASP, JSP</li>
+                    <li>SEMI DEDICATED</li>
+                    <li>Staging or Production</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <a href="#">Enroll today</a>
+            </div>
+        </div>
+
+        <div class="plan ultimate">
+            <h1>Ultimate</h1>
+
+            <div class="content">
+                <h2>Iconic graphics</h2>
+
+                <p class="price"><sup>$</sup><strong>35</strong><sub>Monthly</sub></p>
+                <ul>
+                    <li>Semi Dedicated</li>
+                    <li>1TB Storage</li>
+                    <li>Faster Site, Better SEO</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <a href="#">Enroll today</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
