@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Trebuchet MS",sans-serif;
+        }
+
+        .feedback-container {
+            background: url("img/background.png");
+            padding: 20px 0 60px;
+        }
+
+        .feedback-container h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #3170a8;
+            text-align: center;
+        }
+
+        .feedback-container h1 em {
+            font-style: normal;
+            color: #ee8129;
+        }
+
+        .feedback-container main {
+            display: flex;
+            justify-content: space-between;
+            width: 990px;
+            margin: auto;
+        }
+
+        .feedback-item {
+            display: flex;
+        }
+
+        .feedback-item img {
+            width: 99px;
+        }
+
+        .feedback-item .text-block {
+            width: 316px;
+            padding: 16px;
+            padding-bottom: 0;
+            margin-left: 24px;
+            background: #f7f7f7;
+            position: relative;
+        }
+
+        .feedback-item .text-block:before {
+            content: "";
+            border: 12px solid transparent;
+            border-right: 16px solid #f7f7f7;
+            height: 0;
+            width: 0;
+            display: block;
+            margin-left: -44px;
+            position: absolute;
+            margin-top: 20px;
+        }
+
+        .feedback-item .client-info {
+            font-size: 13px;
+            font-style: italic;
+            color: #3070a8;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed;
+            padding-bottom: 10px;
+        }
+
+        .feedback-item .client-name:before {
+            content: "- ";
+        }
+
+        .feedback-item p {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<section class="feedback-container">
+    <header>
+        <h1><em>What</em> client says</h1>
+    </header>
+
+    <main>
+        <div class="feedback-item">
+            <img src="img/face1.png" alt="Avatar 1"/>
+            <div class="text-block">
+                <div class="client-info">
+                    <div class="client-name">Staciya Trollio</div>
+                    <div class="client-type">Customer</div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry</p>
+            </div>
+        </div>
+
+        <div class="feedback-item">
+            <img src="img/face2.png" alt="Avatar 1"/>
+            <div class="text-block">
+                <div class="client-info">
+                    <div class="client-name">Staciya Trollio</div>
+                    <div class="client-type">Customer</div>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry</p>
+            </div>
+        </div>
+    </main>
+</section>
+
+</body>
+</html>
