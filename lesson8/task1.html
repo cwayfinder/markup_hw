@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        * {
+            font-size: 14px;
+        }
+
+        .arrow {
+            font-family: sans-serif;
+            background-color: #ffcc66;
+            width: 500px;
+            position: relative;
+            padding: 5px 16px 5px 5px;
+            height: 42px;
+        }
+
+        .arrow:after {
+            content: "";
+            border: 26px solid transparent;
+            border-left: 16px solid #ffcc66;
+            height: 0;
+            width: 0;
+            display: block;
+            right: -42px;
+            position: absolute;
+            top: 0;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .wrapper input {
+            flex: 1;
+        }
+
+        .wrapper button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="arrow">
+    <div class="wrapper">
+        <input type="text"/>
+        <button>Search</button>
+    </div>
+    <input id="filter" type="checkbox"/>
+    <label for="filter">search in site descriptions</label>
+</div>
+
+</body>
+</html>
