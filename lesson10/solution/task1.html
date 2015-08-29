@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css"/>
+
+    <style>
+        body {
+            background-color: #f6f9f9;
+        }
+
+        header {
+            font-family: Lato, sans-serif;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 41px;
+            color: #2d3950;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 15px;
+            color: #909090;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: calc((360px + 20px) * 3);
+            margin: 0 auto;
+        }
+
+        .picture {
+            margin: 10px;
+            position: relative;
+            width: 360px;
+            height: 260px;
+        }
+
+        .details {
+            display: none;
+        }
+
+        .picture:hover .details {
+            position: absolute;
+            width: 360px;
+            height: 260px;
+            top: 0;
+            left: 0;
+            background-color: rgba(58, 173, 244, .8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details a i {
+            color: #fff;
+            text-decoration: none;
+            border-radius: 2px;
+            border: solid 1px #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .details a i:last-child {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Showcase your work like a pro.</h1>
+
+    <p>Contact me if you like my work</p>
+</header>
+
+<main>
+    <div class="picture">
+        <img src="img/image1.png" alt="Image 1"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="img/image2.png" alt="Image 2"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="img/image3.png" alt="Image 3"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="img/image4.png" alt="Image 4"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="img/image5.png" alt="Image 5"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="img/image6.png" alt="Image 6"/>
+        <div class="details">
+            <a href="#"><i class="fa fa-search-plus"></i></a>
+            <a href="#"><i class="fa fa-link"></i></a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
