@@ -476,7 +476,7 @@ body {
   .comments {
     &:after {
       $bg-image-width: 225px;
-      background-position: right calc(#{$content-horizontal-margin} + #{$bg-image-width} / 2) bottom;
+      background-position: right calc(50% - #{$content-width} / 2 + #{$bg-image-width} / 2) bottom;
     }
 
     .button {

@@ -343,6 +343,6 @@ body {
     padding-left: calc(50% - 990px / 2);
     padding-right: calc(50% - 990px / 2); }
   .comments:after {
-    background-position: right calc(calc(50% - 990px / 2) + 225px / 2) bottom; }
+    background-position: right calc(50% - 990px / 2 + 225px / 2) bottom; }
   .comments .button {
     left: calc(50% - 990px / 2); } }
