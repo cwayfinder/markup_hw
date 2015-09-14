@@ -462,15 +462,15 @@ body {
 
 @media (min-width: 1000px) {
   $content-width: 990px;
-  $content-horizontal-margin: 50% - #{$content-width} / 2;
+  $content-horizontal-margin: calc(50% - #{$content-width} / 2);
 
   .banner .form {
-    right: calc(#{$content-horizontal-margin});
+    right: $content-horizontal-margin;
   }
 
   .container {
-    padding-left: calc(#{$content-horizontal-margin});
-    padding-right: calc(#{$content-horizontal-margin});
+    padding-left: $content-horizontal-margin;
+    padding-right: $content-horizontal-margin;
   }
 
   .comments {
@@ -480,7 +480,7 @@ body {
     }
 
     .button {
-      left: calc(#{$content-horizontal-margin});
+      left: $content-horizontal-margin;
     }
   }
 }
